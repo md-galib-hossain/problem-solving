@@ -3,7 +3,7 @@
 #include "../array_utils.hpp"
 using namespace std;
 
-void solve()
+void leftRotate()
 
 {
 
@@ -22,9 +22,31 @@ ans[realIndex]=arr[i];
 
 printArray(ans,n);
 }
+
+void rightRotate()
+
+{
+
+int n,k;cin>>n>>k;
+int arr[n];
+inputArray(arr,n);
+//1,2,3,4,5
+int ans[n];
+for(int i=0;i<n;i++){
+int realIndex=(i+k)%n;
+ans[realIndex]=arr[i];
+
+}
+
+
+printArray(ans,n);
+}
+
 int main()
 {
 
-    solve();
+    rightRotate();
     return 0;
 }
+//O(n) time
+//O(n) space
