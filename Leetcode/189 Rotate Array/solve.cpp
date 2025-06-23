@@ -11,6 +11,7 @@ int n,k;cin>>n>>k;
 int arr[n];
 inputArray(arr,n);
 //1,2,3,4,5
+k=k%n;
 int ans[n];
 for(int i=0;i<n;i++){
 int realIndex=(i+n-k)%n;
