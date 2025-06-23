@@ -6,7 +6,8 @@ using namespace std;
 void leftRotate()
 
 {
-
+  //O(n) time
+    //O(n) space
 int n,k;cin>>n>>k;
 int arr[n];
 inputArray(arr,n);
@@ -26,7 +27,8 @@ printArray(ans,n);
 void rightRotate()
 
 {
-
+//O(n) time
+    //O(n) space
 int n,k;cin>>n>>k;
 int arr[n];
 inputArray(arr,n);
@@ -53,6 +55,8 @@ while(i<j){
 }
 
 void optimizedLeftRotate(){
+      //O(n) time
+    //O(1) space
     int n,k;cin>>n>>k;
 int arr[n];
 inputArray(arr,n);
@@ -65,6 +69,8 @@ printArray(arr,n);
 }
 
 void optimizedRightRotate(){
+    //O(n) time
+    //O(1) space
     int n,k;cin>>n>>k;
 int arr[n];
 inputArray(arr,n);
