@@ -11,27 +11,17 @@ int main()
         nums.push_back(x);
     }
 
-    unordered_map<int, int> mp;
+    unordered_map<int, bool> mp;
     for (int i = 0; i < nums.size(); i++)
     {
-        mp[nums[i]]++;
-    }
-
-    bool hasDuplicate = false;
-
-    for (auto i : mp)
-    {
-        cout << i.first << " : " << i.second << endl;
-        if (i.second > 1)
+        if (mp[nums[i]])
         {
-            hasDuplicate = true;
+            cout << "Duplicate found." << endl;
+            return 0;
         }
+        mp[nums[i]] = true;
     }
 
-    if (hasDuplicate)
-        cout << "Duplicates found." << endl;
-    else
-        cout << "All elements are unique." << endl;
-
+    cout << "All elements are unique." << endl;
     return 0;
 }
