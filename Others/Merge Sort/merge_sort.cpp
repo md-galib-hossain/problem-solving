@@ -19,7 +19,7 @@ void Merge(vector<int> &arr,int l,int mid,int r ){
 void MergeSort(vector<int> &arr, int l, int r) { 
     if (l == r) return;
 
-    int mid = (l + r) / 2;
+    int mid = l+(r-l)/2;
 
     MergeSort(arr, l, mid);
     MergeSort(arr, mid + 1, r);
